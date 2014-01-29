@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp">
+
+    <EditText
+        android:id="@+id/quoteText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/quote_text"
+        android:inputType="textMultiLine"
+        android:singleLine="false" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/authorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/quoteText"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/author_text"
+        android:inputType="text" />
+
+    <AutoCompleteTextView
+        android:id="@+id/categoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/authorText"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/category_text" />
+
+    <Button
+        android:id="@+id/editorSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/categoryText"
+        android:text="@string/save_button_text" />
+
+
+</RelativeLayout>
